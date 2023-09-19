@@ -19,15 +19,17 @@ int _atoi(char *s)
 
 	while (s[len] != '\0')
 		len++;
+
 	while (x < len && c == 0)
 	{
 		if (s[x] == '-')
 			++a;
+
 		if (s[x] >= '0' && s[x] <= '9')
 		{
 			digit = s[x] - '0';
 			if (a % 2)
-				digit = digit;
+				digit = -digit;
 			b = b * 10 + digit;
 			c = 1;
 			if (s[x + 1] < '0' || s[x + 1] > '9')
