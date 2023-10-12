@@ -2,7 +2,8 @@
 
 /**
  * print_all - prints anything
- * @format: list the types of argumest
+ * @format: list the types of argument
+ * Return: success
  */
 void print_all(const char * const format, ...)
 {
